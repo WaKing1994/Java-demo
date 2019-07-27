@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>个人列表</h1>
+<table>
+    <thead>
+    <th>用户名</th>
+    <th>密码</th>
+    </thead>
+    <tbody>
+    <tr><a href="/index">
+        <button>新增</button>
+    </a></tr>
+    <#list users as user>
+    <tr>
+        <td>${user.username}</td>
+        <td>${user.password}</td>
+        <td>
+            <a href="/edit?id=${user.id}">
+                <button>编辑</button>
+            </a>
+            <a href="/delete?id=${user.id}">
+                <button>删除</button>
+            </a>
+            </td>
+    </tr>
+    </#list>
+    </tbody>
+</table>
+</body>
+</html>
