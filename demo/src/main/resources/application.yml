@@ -1,9 +1,12 @@
 spring:
   datasource:
     name: card
-    url: jdbc:mysql://localhost:3306/card?useUnicode=true&serverTimezone=UTC&useSSL=false&zeroDateTimeBehavior=convertToNull
+#    url: jdbc:mysql://localhost:3306/card?useUnicode=true&serverTimezone=UTC&useSSL=false&zeroDateTimeBehavior=convertToNull
+#    username: root
+#    password: root
+    url: jdbc:mysql://rm-wz9mu5h99ednv3z9djo.mysql.rds.aliyuncs.com/walking?useUnicode=true&serverTimezone=UTC&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: root
+    password: Walking2019
     driver-Class-Name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   freemarker:
