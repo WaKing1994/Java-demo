@@ -1,12 +1,11 @@
 spring:
   datasource:
     name: card
-    url: jdbc:mysql://localhost:3306/card?useUnicode=true&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/card?useUnicode=true&serverTimezone=UTC&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
     password: root
     driver-Class-Name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-
   freemarker:
     request-context-attribute: req  #req访问request
     suffix: .html  #后缀名
